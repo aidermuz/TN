@@ -36,3 +36,29 @@ npx create-next-app@14.0.1 antonio-trello-clone
 # Marketing
 
 npx shadcn-ui@latest add button
+
+# Authentication
+
+Clerk setup: https://clerk.com/ - login - add application 
+```
+application name: antonio-trello 
+turn off email address
+create application
+```
+
+- copy API Keys to .env
+
+`.gitignore .env`
+
+.env 
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= 
+CLERK_SECRET_KEY= 
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in 
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up 
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/ 
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+```
+
+`npm i @clerk/nextjs`
+

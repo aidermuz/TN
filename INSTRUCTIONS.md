@@ -28,3 +28,8 @@ npx create-next-app@14.0.1 antonio-trello-clone
 ```
 
 `npm run dev`
+
+# Folders Setup
+
+...
+

@@ -33,3 +33,6 @@ npx create-next-app@14.0.1 antonio-trello-clone
 
 ...
 
+# Marketing
+
+npx shadcn-ui@latest add button

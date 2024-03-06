@@ -62,3 +62,6 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
 `npm i @clerk/nextjs`
 
+# Organizations
+
+Clerk dashboard: https://dashboard.clerk.com/ - Organizations - "Enable"

@@ -5,7 +5,7 @@ import { FormInput } from "./form-input";
 import { FormButton } from "./form-button";
 
 export const Form = () => {
-  const initialState = { message: null, errors: {} };
+  const initialState = { message: "", errors: {} };
   const [state, dispatch] = useFormState(create, initialState);
 
   return (

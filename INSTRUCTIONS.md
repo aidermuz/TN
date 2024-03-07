@@ -100,7 +100,9 @@ npm i zod
 
 `npx shadcn-ui@latest add label`
 
+# Form Popover
 
-
-
-
+```
+npm i sonner
+npx shadcn-ui@latest add popover tooltip
+```

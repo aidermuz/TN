@@ -96,6 +96,11 @@ npm i zod
 
 ...
 
+# Form Components
+
+`npx shadcn-ui@latest add label`
+
+
 
 
 

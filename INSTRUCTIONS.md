@@ -92,4 +92,10 @@ npx shadcn-ui@latest add input
 npm i zod
 ```
 
+# Use Action (error log)
+
+...
+
+
+
 

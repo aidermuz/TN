@@ -65,3 +65,10 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 # Organizations
 
 Clerk dashboard: https://dashboard.clerk.com/ - Organizations - "Enable"
+
+# Sidebar
+
+```
+npm i usehooks-ts zustand`
+npx shadcn-ui@latest add accordion skeleton separator sheet
+```

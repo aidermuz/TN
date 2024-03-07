@@ -127,3 +127,14 @@ npx prisma migrate reset
 npx prisma db push
 npx prisma generate
 ```
+
+# Board List 
+
+...
+
+# Board Page
+
+```
+npm i lodash
+npm i -D @types/lodash
+```

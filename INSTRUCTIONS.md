@@ -72,3 +72,24 @@ Clerk dashboard: https://dashboard.clerk.com/ - Organizations - "Enable"
 npm i usehooks-ts zustand`
 npx shadcn-ui@latest add accordion skeleton separator sheet
 ```
+
+# Settings
+
+...
+
+# Server Actions
+
+NeonDB - login - create service
+
+```
+npm i -D prisma
+npx prisma init
+npx prisma generate
+npx prisma db push
+npx prisma studio
+...
+npx shadcn-ui@latest add input
+npm i zod
+```
+
+

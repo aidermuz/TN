@@ -106,3 +106,24 @@ npm i zod
 npm i sonner
 npx shadcn-ui@latest add popover tooltip
 ```
+
+# Create Board
+
+Unsplash
+```
+npm i unsplash-js
+unsplash.com/developer - register
+https://unsplash.com/oauth/applications - create application
+copy Access Key
+```
+
+.env
+```
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+```
+
+```
+npx prisma migrate reset
+npx prisma db push
+npx prisma generate
+```

@@ -172,3 +172,7 @@ npm i @hello-pangea/dnd
 npx shadcn-ui@latest add dialog
 npm i @tanstack/react-query
 ```
+
+# Card Actions
+
+...

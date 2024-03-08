@@ -176,3 +176,12 @@ npm i @tanstack/react-query
 # Card Actions
 
 ...
+
+# Activity
+
+```
+npm i date-fns
+npx shadcn-ui@latest add avatar
+npx prisma db push
+npx prisma generate
+```

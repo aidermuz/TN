@@ -165,3 +165,10 @@ npx prisma studio - "view list"
 ```
 npm i @hello-pangea/dnd
 ```
+
+# Card Modal
+
+```
+npx shadcn-ui@latest add dialog
+npm i @tanstack/react-query
+```

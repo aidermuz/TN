@@ -138,3 +138,12 @@ npx prisma generate
 npm i lodash
 npm i -D @types/lodash
 ```
+
+# List Form
+
+```
+npx prisma migrate reset
+npx prisma db push
+npx prisma generate
+npx prisma studio - "view list"
+```

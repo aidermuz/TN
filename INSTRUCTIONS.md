@@ -152,3 +152,6 @@ npx prisma studio - "view list"
 
 ...
 
+# List Options
+
+...

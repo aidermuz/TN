@@ -159,3 +159,9 @@ npx prisma studio - "view list"
 # Card Form
 
 `npx shadcn-ui@latest add textarea`
+
+# Drag and Drop
+
+```
+npm i @hello-pangea/dnd
+```

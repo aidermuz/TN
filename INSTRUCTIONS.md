@@ -155,3 +155,7 @@ npx prisma studio - "view list"
 # List Options
 
 ...
+
+# Card Form
+
+`npx shadcn-ui@latest add textarea`

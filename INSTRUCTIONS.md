@@ -44,11 +44,10 @@ Clerk setup: https://clerk.com/ - login - add application
 application name: antonio-trello 
 turn off email address
 create application
+copy API KEYS to .env
+.gitignore .env
+npm i @clerk/nextjs
 ```
-
-- copy API Keys to .env
-
-`.gitignore .env`
 
 .env 
 ```
@@ -59,8 +58,6 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/ 
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 ```
-
-`npm i @clerk/nextjs`
 
 # Organizations
 
@@ -79,7 +76,7 @@ npx shadcn-ui@latest add accordion skeleton separator sheet
 
 # Server Actions
 
-NeonDB - login - create service
+NeonDB: https://neon.tech/ - login - create service
 
 ```
 npm i -D prisma
@@ -87,10 +84,23 @@ npx prisma init
 npx prisma generate
 npx prisma db push
 npx prisma studio
-...
+.
 npx shadcn-ui@latest add input
 npm i zod
 ```
+
+.env 
+```
+DATABASE_URL=
+```
+
+.package.json
+```
+"scripts": {
+    "postinstall": "prisma generate"
+  },
+```
+
 
 # Use Action (error log)
 
@@ -184,4 +194,76 @@ npm i date-fns
 npx shadcn-ui@latest add avatar
 npx prisma db push
 npx prisma generate
+```
+
+# Stripe
+
+```
+npx prisma db push
+npx prisma generate
+``` 
+
+Stripe API KEY & Webhook
+```
+npm i stripe
+stripe.com - login - create store "antonio-trello"
+click developers tab
+api keys - copy secret key to .env
+.
+webhooks - "test in local environment"
+download & open stripe cli - visit link - allow access
+run stripe listen --forward-to localhost:3000/api/webhook
+copy webhook signing secret to .env
+.
+stripe.com - search "billing portal" - customer portal
+click "activate test link"
+validate Billing - "Manage Billing" show "Stripe Plan"
+```
+
+Stripe Payment
+```
+Card Information: 4242*
+Cardholder name: a
+click "Pay and subscribe"
+show "200" requests
+validate OrgSubscription in "npx prisma studio"
+validate "create new board unlimited"
+validate can create new board
+validate Billing - "Manage Billing" show "Stripe Plan"
+```
+
+.env
+```
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+STRIPE_API_KEY=
+STRIPE_WEBHOOK_SECRET=
+```
+
+Webhook production
+```
+stripe.com - login - developers tab - "add endpoint"
+copy vercel endpoint to stripe "endpoint url" + "api/webhook/
+select events - checkout.session.completed & invoice.payment.succeeded
+click "add events" - "add endpoint"
+click "reveal signing secret" - copy to vercel env vars
+copy endpoint url to vercel env var NEXT_PUBLIC_APP_URL + remove "/" at end
+```
+
+# Deployment
+
+foreach
+```
+git add .
+git commit -m "XX: message"
+git push
+validate deployment succeed
+```
+
+once
+```
+github.com/new - name "antonio-trello" - create repo
+use second option - "push an existing repo"
+.
+vercel.com/new - import "antonio-trello" - deploy
+settings - environment variables - add from .env
 ```

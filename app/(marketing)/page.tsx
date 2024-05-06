@@ -29,10 +29,10 @@ const MarketingPage = () => {
           No 1 task managment
         </div>
         <h1 className="text-3xl md:text-6xl text-center text-neutral-800 mb-6">
-          Taskify helps team move
+            TaskNexus помогает команде двигаться
         </h1>
         <div className="text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white px-4 p-2 rounded-md pb-4 w-fit">
-          work forward.
+            начинай работать.
         </div>
       </div>
       <div
@@ -41,12 +41,10 @@ const MarketingPage = () => {
           textFont.className
         )}
       >
-        Collaborate, manage projects, and reach new productivity peaks. From
-        high rises to the home office, the way your team works is unique -
-        accomplish it all with Taskify.
+          Сотрудничайте, управляйте проектами и достигайте новой продуктивности. От высотных зданий до домашнего офиса, как ваша команда Работа уникальна — сделайте все это с помощью TaskNexus.
       </div>
       <Button className="mt-6" size="lg" asChild>
-        <Link href="/sign-up">Get Taskify for free</Link>
+        <Link href="/sign-up">Начни пользоваться TaskNexus бесплатно</Link>
       </Button>
     </div>
   );
